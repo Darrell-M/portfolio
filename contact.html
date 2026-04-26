@@ -60,55 +60,83 @@
             <img src="assets/Selfie.jpg" alt="sfeerbeeld" class=" rounded-circle w-100">
           </div>
           <div class="col-md-6 mt-4">
-          <p class="mt-5">Ik ben Darrell, 22 jaar met een passie voor creëren en creaties. Zowel op de werkvloer als in mijn vrije tijd. Desondanks dat ik niet perfect ben trots ik mezelf in mijn zelfkennis en doorzettingsvermogen. Ik lees graag boeken en andere fictie, en amuseer mezelf en ze te ontleden. </p>
+          <p class="mt-5">Ik ben Darrell, 22 jaar met een passie voor creëren en creaties. Zowel op de werkvloer als in mijn vrije tijd. Desondanks dat ik niet perfect ben, trots ik mezelf in mijn zelfkennis en doorzettingsvermogen. Ik lees graag boeken en andere fictie, en amuseer mezelf in ze te ontleden.</p>
           </div>
+          </div>
+          <div class="col-12 mb-3">
+            
+            <p class="mt-4">Voor mij een bericht te sturen.<i class="bi bi-arrow-down"></i></p>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <div class="form-floating">
+                <input id="naam" type="text" class="form-control" required>
+                <label for="naam">Naam</label>
+              </div>
+              <div class="form-floating mt-2">
+                <input id="email" type="email" class="form-control" required>
+                <label for="email">E-mail</label>
+              </div>
+              <div class="form-floating mt-2">
+                <input id="onderwerp" type="text" class="form-control" required>
+                <label for="onderwerp">onderwerp</label>
+              </div>
+              <div class="form-group">
+                <label for="bericht"></label>
+                <textarea class="form-control" rows="10" id="bericht" name="bericht" required></textarea>
+              </div>
+              <div class="form-group">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+              
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+      </form>
           </div>
       </main>
              <aside class="col-md-3 border-start ps-4">
         <h2 class="text-uppercase fs-3 fw-bolder pt-4">contact</h2>
         <p>Darrell Morel<br>
-          <a class="hov" href="mailto:powerweb@ap.be">dm.business@gmail.com</a><br>
-          +32 488 80 23 11
+          <a class="hov" href="mailto:d.morel1506@gmail.com">d.morel1506@gmail.com</a><br>
+          <a class="hov" href="tel:+32-488-80-23-11">+32 488 80 23 11
         </p>
         <ul class="list-inline socials">
           <li class="list-inline-item">
             <a href="https://www.linkedin.com" target="_blank">
-              <i class="bi bi-linkedin"></i>
+              <i class="blauw bi bi-linkedin"></i>
             </a>
           </li>
           <li class="list-inline-item">
             <a href="https://www..com" target="_blank">
-              <i class="bi bi-instagram"></i>
+              <i class="blauw bi bi-instagram"></i>
             </a>
           </li>
           <li class="list-inline-item">
             <a href="https://www.facebook.com" target="_blank">
-              <i class="bi bi-facebook"></i>
+              <i class="blauw bi bi-facebook"></i>
             </a>
           </li>
           <li class="list-inline-item">
             <a href="https://twitter.com/" target="_blank">
-              <i class="bi bi-twitter"></i>
+              <i class="blauw bi bi-twitter"></i>
             </a>
           </li>
         </ul>
       </aside>
     </div>
   </div>
-    <footer class="border-top container-fluid p-3"><div class="row">
+    <footer class="border-top container-fluid p-3">
+    <div class="row">
     <div class="col-md-8">
       <ul style="list-style-type: none;">
         <h6 class="fw-bolder text-uppercase mb-3">Contact</h6>
-        <li><a class="hov" href="mail-to:dm.business@gmail.com"><i class="bi bi-envelope-at"></i>&nbsp;e-mail</a>
+        <li><a class="hov" href="mail-to:d.morel1506@gmail.com"><i class="bi bi-envelope-at"></i>&nbsp;e-mail</a>
         </li>
-        <li><i class="bi bi-telephone"></i>+32 488 80 23 11</li>
+        <li><a class="hov" href="tel:+32-488-80-23-11"><i class="bi bi-telephone"></i>+32 488 80 23 11</li></a>
       </ul>
     </div>
     <div class="col-md-4">
       <ul style="list-style-type: none;">
         <h6 class="fw-bolder text-uppercase mb-3">extra</h6>
       <li>&copy;Darrell Morel</li>
-      <a href="#top">Back to Top</a>
+      <a href="#top" class="hov">Back to Top</a>
       </ul>
     </div>
   </div>
