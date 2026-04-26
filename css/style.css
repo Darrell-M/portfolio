@@ -42,7 +42,7 @@ nav, .nav-link{
 
 a{
     text-decoration: none;
-    color:#32C0F0;
+    color: #32C0F0;
 }
 
 .nav-link.active, .hov:hover{
@@ -53,6 +53,10 @@ a{
 .blauw{
     text-decoration: none;
     color:#32C0F0;
+}
+
+span{
+    color: red;
 }
 
 
