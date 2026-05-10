@@ -82,7 +82,7 @@
           <div class="col-12 mb-3">
             
             <p class="mt-4">Voor mij een bericht te sturen.<i class="bi bi-arrow-down"></i></p>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="false">
               <div class="form-floating">
                 <input id="naam" type="text" class="form-control" required>
                 <label for="naam">Naam</label>
@@ -98,9 +98,6 @@
               <div class="form-group">
                 <label for="bericht"></label>
                 <textarea class="form-control" rows="10" id="bericht" name="bericht" required></textarea>
-              </div>
-              <div class="form-group">
-                <div data-netlify-recaptcha="true"></div>
               </div>
               
         <button type="submit" class="btn btn-primary mt-2">Verzenden</button>
