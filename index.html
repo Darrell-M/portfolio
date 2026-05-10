@@ -16,7 +16,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
+  <!-- eigen geschreven css voor mijn html-bestand -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,7 +24,7 @@
   <header>
     <nav class="navbar navbar-dark navbar-expand-md fw-bold">
   <div class="container-fluid">
-    <a class="navbar-brand nav-link p-1 white" aria-current="page" href="index.html"><img src="assets/Logo.png" alt="LOGO" width="80" height="80"></a>
+    <a class="navbar-brand nav-link p-1 white" aria-current="page" href="index.html"><img src="assets/logo.png" alt="LOGO" width="80" height="80"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,9 +39,9 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projecten</a>
           <ul class="dropdown-menu">
-            <li><a class="hov dropdown-item" href="verkeerslicht.html">Verkeerslicht</a></li>
-            <li><a class="hov dropdown-item" href="nachtmodus.html">Loxone nachtmodus</a></li>
-            <li><a class="hov dropdown-item" href="spoorweg.html">Spoorweg</a></li>
+            <li><a class="dropdown-item" href="arduino.html">Arduino</a></li>
+            <li><a class="dropdown-item" href="loxone.html">Loxone</a></li>
+            <li><a class="dropdown-item" href="netwerk.html">Netwerkbeheer</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -51,18 +51,17 @@
     </div>
   </div>
   </nav>
-  <h1 class="p-5 text-center text-capitalize">
-    Welkom op mijn website
+    <h1 class="text-uppercase text-center fw-bolder p-5">darrell morel</h1>
   </header>
   <div class="container">
     <div class="row">
       <main class="col-md-9">
         <section>
         <h2 class="text-start fs-4">Wat?</h2>
-        <p>Ik ben Darrell, student graduaat IoT op <a class="blauw" href="https://www.ap.be" target="_blank">Artesis Plantijn Hogeschool</a> en dit is mijn website,&nbsp;geschreven met HTML5 en <a class="blauw" href="https://www.getbootstrap.com" target="_blank">Bootstrap</a>.<br>Lerende meerdere technieken i.v.m automatiseren en netwerken, zoals:</p>
+        <p>Ik ben Darrell, student graduaat IoT op <a class="blauw" href="https://www.ap.be" target="blank">Artesis Plantijn Hogeschool</a> en dit is mijn website,&nbsp;geschreven met HTML5 en <a class="blauw" href="https://www.getbootstrap.com" target="blank">Bootstrap</a>.<br>Lerende meerdere technieken i.v.m automatiseren en netwerken, zoals:</p>
         <div class="row mt-4">
           <div class="col-md-6">
-            <img src="assets/Smart Home Layout.jpg" alt="sfeerbeeld" class="w-100">
+            <img src="assets/smart-home.jpg" alt="sfeerbeeld" class="w-100">
           </div>
           <div class="col-md-6 mt-4">
           <ul>
@@ -86,18 +85,18 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active c-item">
-      <a href="verkeerslicht.html">
-      <img src="assets/Breadboard verkeerslicht met voorrang.png" class="d-block w-100 rounded c-img" alt="Screenshot breadboard">
+      <a href="arduino.html">
+      <img src="assets/autoDCmotor.png" class="d-block w-100 rounded c-img" alt="Screenshot breadboard">
       </a>
     </div>
     <div class="carousel-item c-item">
-      <a href="spoorweg.html">
-      <img src="assets/Simulatie Spoorweg.png" class="d-block w-100 rounded c-img" alt="Screenshot code spoorweg">
+      <a href="netwerk.html">
+      <img src="assets/grondplan.jpg" class="d-block w-100 rounded c-img" alt="Screenshot code grondplan">
       </a>
     </div>
     <div class="carousel-item c-item">
-      <a href="nachtmodus.html">
-      <img src="assets/Configuratie.png" class="d-block w-100 rounded c-img" alt="screenshot loxone config">
+      <a href="loxone.html">
+      <img src="assets/loxone-lichtsturing.png" class="d-block w-100 rounded c-img" alt="screenshot loxone config">
       </a>
     </div>
   </div>
@@ -116,28 +115,16 @@
        <aside class="col-md-3 border-start ps-4">
         <h2 class="text-uppercase fs-3 fw-bolder pt-4">contact</h2>
         <p>Darrell Morel<br>
-          <a class="hov" href="mailto:d.morel1506@gmail.com">d.morel1506@gmail.com</a><br>
-          <a class="hov" href="tel:+32-488-80-23-11">+32 488 80 23 11
+          <a href="tel:+32-488-80-23-11">+32 488 80 23 11
         </p>
         <ul class="list-inline socials">
           <li class="list-inline-item">
-            <a href="https://www.linkedin.com" target="_blank">
-              <i class="blauw bi bi-linkedin"></i>
+            <a href="mail-to:d.morel1506@gmail.com"><i class=" fs-4 bi bi-envelope-at"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://www..com" target="_blank">
-              <i class="blauw bi bi-instagram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com" target="_blank">
-              <i class="blauw bi bi-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/" target="_blank">
-              <i class="blauw bi bi-twitter"></i>
+            <a href="https://github.com/Darrell-M" target="blank">
+              <i class="fs-4 bi bi-github"></i>
             </a>
           </li>
         </ul>
@@ -149,16 +136,16 @@
     <div class="col-md-8">
       <ul style="list-style-type: none;">
         <h6 class="fw-bolder text-uppercase mb-3">Contact</h6>
-        <li><a class="hov" href="mail-to:d.morel1506@gmail.com"><i class="bi bi-envelope-at"></i>&nbsp;e-mail</a>
+        <li><a href="mailto:d.morel1506@gmail.com"><i class="bi bi-envelope-at"></i> e-mail</a>
         </li>
-        <li><a class="hov" href="tel:+32-488-80-23-11"><i class="bi bi-telephone"></i>+32 488 80 23 11</li></a>
+        <li><a href="tel:+32-488-80-23-11"><i class="bi bi-telephone"></i>+32 488 80 23 11</a></li>
       </ul>
     </div>
     <div class="col-md-4">
       <ul style="list-style-type: none;">
         <h6 class="fw-bolder text-uppercase mb-3">extra</h6>
-      <li>&copy;Darrell Morel</li>
-      <a href="#top" class="hov">Back to Top</a>
+      <li>&copy;2026 Darrell Morel</li>
+      <a href="#top">Back to Top</a>
       </ul>
     </div>
   </div>

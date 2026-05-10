@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Arduino</title>
   <!-- resetten van browsers -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap CSS -->
@@ -18,20 +18,6 @@
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Leaflet-->
-   <!-- Leaflet css-bestand-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-
-     <!--Leaflet javascript-->
-      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
-
-     <!--Leaflet javascript map.js-->
-     <script src="js/map.js" defer></script>
-     
 </head>
 <body>
   <header>
@@ -50,64 +36,69 @@
           <a class="nav-link" href="portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projecten</a>
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projecten</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="arduino.html">Arduino</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="arduino.html">Arduino</a></li>
             <li><a class="dropdown-item" href="loxone.html">Loxone</a></li>
             <li><a class="dropdown-item" href="netwerk.html">Netwerkbeheer</a></li>
           </ul>
         </li>
         <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+        <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
   </div>
   </nav>
-    <h1 class="text-uppercase text-center fw-bolder p-5">contact</h1>
+    <h1 class="text-uppercase text-center fw-bolder p-5">arduino framework</h1>
   </header>
   <div class="container">
     <div class="row">
       <main class="col-md-9">
-        <div class="row mt-4">
-          <div class="col-md-6">
-            <img src="assets/Profielfoto.png" alt="Profielfoto" class="rounded-circle w-100">
+
+        <figure>
+          <img class="p-img rounded" src="assets/autoDCmotor-code.png" alt="schermafbeelding van de code waar de auto op werkt">
+          <figcaption class="text-center fw-bolder fs-4 mb-5">C++ code waar de auto op werkt</figcaption>
+        </figure>
+        <figure>
+          <img class="p-img rounded" src="assets/autoDCmotor.png" alt="foto van de breadboard aansluiting">
+          <figcaption class="text-center fw-bolder fs-4 mb-5">Breadboard aansluiting</figcaption>
+        </figure>
+        <figure>
+          <img class="p-img rounded" src="assets/lcd-scherm.png" alt="foto van het werkend LCD-scherm op de auto">
+          <figcaption class="text-center fw-bolder fs-4 mb-5">Werkend LCD-scherm</figcaption>
+        </figure>
+        
+          <div class="row">
+            <div class="col-xl-6">
+              <h2 class="text-uppercase text-start fs-4 fw-bolder ">auto dc-motor</h2>
+              <figure>
+                 <video class="p-img" style="width: 400px; height: 300px;" controls>
+                     <source src="assets/werkendeDCauto.mp4" type="video/mp4"/>
+                  </video>
+                </figure>
+            </div>
+            <div class="mb-5 col-xl-6 text-start mt-3 pt-3 fs-6">
+              We experimenteren met een ESP32-microcontroller dat is aangesluiten op een wagen met 2 ingebouwdge DC-motoren en een LCD-scherm door verschillende fysieke componenten aan te sturen door in C++ te coderen zoals: <br> drukknoppen met potentio-meter en responsief LCD-scherm, beweging via een joystick, en binnekort volledig automatisch door middel van sensoren die een traject moeten volgen, met name de <a class="blauw" href="https://www.vishay.com/docs/83760/tcrt5000.pdf" target="blank">TCRT500</a> infrarood sensoren en de <a class="blauw" href="https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf">HCSR04</a> ultrasonische afstandmeters.
+            </div>
           </div>
-          <div class="col-md-6 mt-4">
-          <p class="mt-5">Ik ben Darrell, 22 jaar met een passie voor creëren en creaties. Zowel op de werkvloer als in mijn vrije tijd. Desondanks dat ik niet perfect ben, trots ik mezelf in mijn zelfkennis en doorzettingsvermogen. Ik lees graag boeken en andere fictie, en amuseer mezelf in ze te ontleden.</p>
-          <p>Gevestigd in <strong>Borgerhout, Antwerpen België.</strong></p>
-          <div class="p-img rounded" id="map"></div>
+          <div class="row">
+            <div class="col-sm-8"><h3 class="text-uppercase fs-4 fw-bolder pt-3">geleerd</h3>
+              <p>Dit project heeft me geleerd al mijn opgebouwde technieken oprecht te begrijpen en ook om niet in dezelfde denkwijze te blijven hangen maar om andere manieren te zoeken en vinden om deze technieke toe te passen.</p>
+             </div>
+             <div class="col-sm-4"> <h3 class="text-uppercase fs-4 fw-bolder pt-3">toegepast</h3>
+              <ul>
+                <li>Functies</li>
+                <li>Interrupts</li>
+                <li>Datasheets</li>
+                <li>Libraries</li>
+                <li>Fysieke pinnen</li>
+              </ul>
+            </div>
           </div>
-          </div>
-          <div class="col-12 mb-3">
-            
-            <p class="mt-4">Voor mij een bericht te sturen.<i class="bi bi-arrow-down"></i></p>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-              <div class="form-floating">
-                <input id="naam" type="text" class="form-control" required>
-                <label for="naam">Naam</label>
-              </div>
-              <div class="form-floating mt-2">
-                <input id="email" type="email" class="form-control" required>
-                <label for="email">E-mail</label>
-              </div>
-              <div class="form-floating mt-2">
-                <input id="onderwerp" type="text" class="form-control" required>
-                <label for="onderwerp">onderwerp</label>
-              </div>
-              <div class="form-group">
-                <label for="bericht"></label>
-                <textarea class="form-control" rows="10" id="bericht" name="bericht" required></textarea>
-              </div>
-              <div class="form-group">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
-              
-        <button type="submit" class="btn btn-primary mt-2">Verzenden</button>
-      </form>
-          </div>
+        
       </main>
-             <aside class="col-md-3 border-start ps-4">
+      <aside class="col-md-3 border-start ps-4">
         <h2 class="text-uppercase fs-3 fw-bolder pt-4">contact</h2>
         <p>Darrell Morel<br>
           <a href="tel:+32-488-80-23-11">+32 488 80 23 11
@@ -126,14 +117,14 @@
       </aside>
     </div>
   </div>
-  <footer class="border-top container-fluid p-3">
+    <footer class="border-top container-fluid p-3">
     <div class="row">
     <div class="col-md-8">
       <ul style="list-style-type: none;">
         <h6 class="fw-bolder text-uppercase mb-3">Contact</h6>
-        <li><a href="mailto:d.morel1506@gmail.com"><i class="bi bi-envelope-at"></i> e-mail</a>
+        <li><a href="mail-to:d.morel1506@gmail.com"><i class="bi bi-envelope-at"></i>&nbsp;e-mail</a>
         </li>
-        <li><a href="tel:+32-488-80-23-11"><i class="bi bi-telephone"></i>+32 488 80 23 11</a></li>
+        <li><a href="tel:+32-488-80-23-11"><i class="bi bi-telephone"></i>+32 488 80 23 11</li></a>
       </ul>
     </div>
     <div class="col-md-4">

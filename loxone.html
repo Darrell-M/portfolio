@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Loxone</title>
   <!-- resetten van browsers -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap CSS -->
@@ -33,13 +33,13 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projecten</a>
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projecten</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="arduino.html">Arduino</a></li>
-            <li><a class="dropdown-item" href="loxone.html">Loxone</a></li>
+            <li><a class="dropdown-item active" aria-current="page" href="loxone.html">Loxone</a></li>
             <li><a class="dropdown-item" href="netwerk.html">Netwerkbeheer</a></li>
           </ul>
         </li>
@@ -50,60 +50,53 @@
     </div>
   </div>
   </nav>
-  <h1 class="text-uppercase text-center fw-bolder p-5">portfolio</h1>
+   <h1 class="text-uppercase text-center fw-bolder p-5">iot in loxone</h1>
   </header>
   <div class="container">
     <div class="row">
       <main class="col-md-9">
-        <article class="row">
-          <p class="fs-6">Hier vindt u de verzameling van mijn huidige en toekomstige projecten en doeleinden, zowel persoonlijk als zakelijk.</p>
-          <section class="col-12 col-sm-6 col-md-4">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-4">loxone</h2>
-            <p class="h6 small">SmartHome configuraties in Loxone</p>
-            <a href="loxone.html"><figure>
-              <img class="p-img rounded" src="assets/loxone-lichtsturing.png" alt="lichtsturing configuratie in loxone">
-            </figure></a>
-          </section>
-          <section class="col-12 col-sm-6 col-md-4">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-4">arduino</h2>
-            <p class="h6 small">Werken met het Arduino framework</p>
-            <a href="arduino.html"><figure>
-              <img class="rounded p-img" src="assets/autoDCmotor.png" alt="breadboard aansluiting op wagen met DC motor">
-            </figure></a>
-          </section>
-          <section class="col-12 col-sm-6 col-md-4">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-4">Netwerkbeheer</h2>
-            <p class="h6 small">Netwerkopstelling voor fake bedrijf</p>
-            <a href="netwerk.html"><figure>
-              <img class="p-img rounded" src="assets/grondplan.jpg" alt="grondplan van een bedrijf haar netwerkopstelling">
-            </figure></a>
-          </section>
-          <section class="col-12 col-sm-6 col-md-4">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-4">Toekomstig project</h2>
-            <p class="h6 small">Project wordt aan gewerkt</p>
-            <a href="project.html"><figure>
-              <img class="p-img rounded" src="assets/smart-home (2).jpg" alt="sfeerbeeld IoT huis">
-            </figure></a>
-          </section>
-          <section class="col-12 col-sm-6 col-md-4">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-4">Toekomstig project</h2>
-            <p class="h6 small">Project wordt aan gewerkt</p>
-            <a href="project.html"><figure>
-              <img class="p-img rounded" src="assets/smart-home (2).jpg" alt="sfeerbeeld IoT huis">
-            </figure></a>
-          </section>
-          <section class="col-12 col-sm-6 col-md-4">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-4">Toekomstig project</h2>
-            <p class="h6 small">Project wordt aan gewerkt</p>
-            <a href="project.html"><figure>
-              <img class="p-img rounded" src="assets/smart-home (2).jpg" alt="sfeerbeeld IoT huis">
-            </figure></a>
-          </section>
 
+        <figure>
+          <img class="p-img rounded" src="assets/loxone-lichtsturing.png" alt="overzicht van configuratie in loxone">
+          <figcaption class="text-center fw-bolder fs-4 mb-5">Overzicht lichtsturing configuratie in Loxone</figcaption>
+        </figure>
+        <figure>
+          <img class="p-img rounded" src="assets/nachtmodus.png" alt="instellingen van de lichtsturingsstemmingen">
+          <figcaption class="text-center fw-bolder fs-4 mb-5">Verschillende verlichtingsstemmingen</fiGgcaption>
+        </figure>
 
-        </article>
+          <div class="row">
+              <h2 class="text-uppercase text-start fs-4 fw-bolder ">lichtsturing loxone</h2>
+            <p class="text-start mb-5 fs-6">
+              De opdracht was om licht te voorzien met bepaalde voorwaarden in een kamer waaronder met: 
+              <ul>
+                <li>een aanwezigheidssensor</li>
+                <li>buitenlicht detectie </li>
+                <li>overdaginstelling (witbalans verandert automatisch met de tijd)
+                </li>
+                <li>
+                    nachtinstelling (activeert enkel door aanwezigheidssensor met lage lichtintensiteit)
+                </li>
+              </ul>
+              </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 class="text-uppercase fs-4 fw-bolder pt-3">geleerd</h3>
+              <p>Ik heb geleerd hoe ik 
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <h3 class="text-uppercase fs-4 fw-bolder pt-3">toegepast</h3>
+              <ul>
+                <li>Loxone config</li>
+                <li>Loxone miniserver</li>
+                <li>elektronische installatietechnieken</li>
+              </ul>
+            </div>
+          </div>
       </main>
-        <aside class="col-md-3 border-start ps-4">
+      <aside class="col-md-3 border-start ps-4">
         <h2 class="text-uppercase fs-3 fw-bolder pt-4">contact</h2>
         <p>Darrell Morel<br>
           <a href="tel:+32-488-80-23-11">+32 488 80 23 11
@@ -122,20 +115,20 @@
       </aside>
     </div>
   </div>
-  <footer class="border-top container-fluid p-3">
+    <footer class="border-top container-fluid p-3">
     <div class="row">
     <div class="col-md-8">
       <ul style="list-style-type: none;">
         <h6 class="fw-bolder text-uppercase mb-3">Contact</h6>
-        <li><a href="mailto:d.morel1506@gmail.com"><i class="bi bi-envelope-at"></i> e-mail</a>
+        <li><a href="mail-to:d.morel1506@gmail.com"><i class="bi bi-envelope-at"></i>&nbsp;e-mail</a>
         </li>
-        <li><a href="tel:+32-488-80-23-11"><i class="bi bi-telephone"></i>+32 488 80 23 11</a></li>
+        <li><a href="tel:+32-488-80-23-11"><i class="bi bi-telephone"></i>+32 488 80 23 11</li></a>
       </ul>
     </div>
     <div class="col-md-4">
       <ul style="list-style-type: none;">
         <h6 class="fw-bolder text-uppercase mb-3">extra</h6>
-      <li>&copy;2026 Darrell Morel</li>
+      <li>&copy;Darrell Morel</li>
       <a href="#top">Back to Top</a>
       </ul>
     </div>
